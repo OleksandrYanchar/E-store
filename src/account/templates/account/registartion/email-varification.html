@@ -1,0 +1,10 @@
+{% autoescape off %}
+
+Hi, 
+thx 4 registrtation 
+
+Please verify ur account by clickink link below
+
+http://{{domain}}{% url 'email-verification' uidb64=uid token=token %}
+
+{% endautoescape %} 
