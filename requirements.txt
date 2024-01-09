@@ -1,9 +1,9 @@
 Django
 django-crispy-forms==1.14.0
 django-mathfilters
+django-storages
 django-utils-six
 Pillow
 python-dotenv
 psycopg2-binary
 six
-
