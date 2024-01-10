@@ -27,9 +27,10 @@ LOCAL_APPS = [
     "payment",
 ]
 
-THIRD_PARTY = [ 
-               "mathfilters",
-                "crispy_forms",]
+THIRD_PARTY = [
+    "mathfilters",
+    "crispy_forms",
+]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY + LOCAL_APPS
 
@@ -82,7 +83,7 @@ CRISPY_TEMPLATE_PACK = "bootstrap4"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [os.path.join(BASE_DIR, 'templates')],
+        "DIRS": [os.path.join(BASE_DIR, "templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -130,9 +131,9 @@ ROOT_URLCONF = "configs.urls"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-#OPTIONAL
+# OPTIONAL
 
-#EMAIL
+# EMAIL
 
 STATICFILES_DIRS = [BASE_DIR / "static"]
 
@@ -150,4 +151,3 @@ EMAIL_HOST_USER = "oleksandryancharr@gmail.com"
 EMAIL_HOST_PASSWORD = "qcka julm linh rkny"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-

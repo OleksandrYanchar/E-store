@@ -8,7 +8,7 @@ from .cart import Cart
 def cart_summary(request):
     cart = Cart(request)
 
-    return render(request, "cart/cart-summary.html", {'cart':cart})
+    return render(request, "cart/cart-summary.html", {"cart": cart})
 
 
 def cart_add(request):
