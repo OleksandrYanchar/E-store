@@ -44,7 +44,7 @@ DATABASES = {
         "NAME": os.getenv("POSTGRES_DB"),
         "USER": os.getenv("POSTGRES_USER"),
         "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
-        "HOST": "127.0.0.1",
+        "HOST": os.getenv("POSTGRES_HOST"), 
         "PORT": "5432",
     }
 }
@@ -144,10 +144,16 @@ MEDIA_ROOT = BASE_DIR / "static/media"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
+#SMTP SERVER CONF
+
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 
 EMAIL_HOST = "smtp.gmail.com"
-EMAIL_HOST_USER = "oleksandryancharr@gmail.com"
-EMAIL_HOST_PASSWORD = "qcka julm linh rkny"
+
+EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")
+
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")
+
 EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+
+EMAIL_USE_TLS = True 
